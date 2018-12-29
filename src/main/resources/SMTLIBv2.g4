@@ -256,12 +256,12 @@ Numeral
     | [1-9] Digit*
     ;
 
-Binary:
-    BinaryDigit+
+Binary
+    : '#b' BinaryDigit+
     ;
 
 HexDecimal
-    : '#x' HexDigit HexDigit HexDigit HexDigit
+    : '#x' HexDigit+
     ;
 
 Decimal
